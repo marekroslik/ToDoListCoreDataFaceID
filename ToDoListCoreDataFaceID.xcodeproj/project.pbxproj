@@ -13,6 +13,10 @@
 		F9191A402773E2BB00F1B054 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9191A3F2773E2BB00F1B054 /* Preview Assets.xcassets */; };
 		F9191A422773E2BB00F1B054 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9191A412773E2BB00F1B054 /* Persistence.swift */; };
 		F9191A452773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9191A432773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodeld */; };
+		F9E713192774A01100B4543C /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E713182774A01100B4543C /* Title.swift */; };
+		F9E7131B2774A13200B4543C /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E7131A2774A13200B4543C /* PrimaryButton.swift */; };
+		F9E713202774A55300B4543C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E7131F2774A55300B4543C /* LoginView.swift */; };
+		F9E713222774A6EA00B4543C /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E713212774A6EA00B4543C /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		F9191A3F2773E2BB00F1B054 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9191A412773E2BB00F1B054 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F9191A442773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListCoreDataFaceID.xcdatamodel; sourceTree = "<group>"; };
+		F9E713182774A01100B4543C /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		F9E7131A2774A13200B4543C /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F9E7131F2774A55300B4543C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F9E713212774A6EA00B4543C /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,10 @@
 		F9191A372773E2BB00F1B054 /* ToDoListCoreDataFaceID */ = {
 			isa = PBXGroup;
 			children = (
+				F9E713212774A6EA00B4543C /* AuthenticationManager.swift */,
+				F9E7131C2774A2B200B4543C /* Views */,
+				F9E7131727749FE800B4543C /* Components */,
 				F9191A382773E2BB00F1B054 /* ToDoListCoreDataFaceIDApp.swift */,
-				F9191A3A2773E2BB00F1B054 /* ContentView.swift */,
 				F9191A3C2773E2BB00F1B054 /* Assets.xcassets */,
 				F9191A412773E2BB00F1B054 /* Persistence.swift */,
 				F9191A432773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodeld */,
@@ -71,6 +81,24 @@
 				F9191A3F2773E2BB00F1B054 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9E7131727749FE800B4543C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F9E713182774A01100B4543C /* Title.swift */,
+				F9E7131A2774A13200B4543C /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F9E7131C2774A2B200B4543C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9191A3A2773E2BB00F1B054 /* ContentView.swift */,
+				F9E7131F2774A55300B4543C /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E7131B2774A13200B4543C /* PrimaryButton.swift in Sources */,
+				F9E713222774A6EA00B4543C /* AuthenticationManager.swift in Sources */,
+				F9E713192774A01100B4543C /* Title.swift in Sources */,
 				F9191A452773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodeld in Sources */,
 				F9191A422773E2BB00F1B054 /* Persistence.swift in Sources */,
 				F9191A3B2773E2BB00F1B054 /* ContentView.swift in Sources */,
 				F9191A392773E2BB00F1B054 /* ToDoListCoreDataFaceIDApp.swift in Sources */,
+				F9E713202774A55300B4543C /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +312,7 @@
 				DEVELOPMENT_TEAM = BM3524Q23U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +342,7 @@
 				DEVELOPMENT_TEAM = BM3524Q23U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
