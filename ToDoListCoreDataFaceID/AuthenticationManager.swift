@@ -26,7 +26,7 @@ class AuthenticationManager: ObservableObject {
     }
     
     func authenticateWithBiometrics() async {
-         context = LAContext()
+        context = LAContext()
         
         if canEvaluatePolicy {
             let reason = "Log into your account"
@@ -35,7 +35,7 @@ class AuthenticationManager: ObservableObject {
                 
                 if success {
                     DispatchQueue.main.async {
-                        self.isAuthenticated = true 
+                        self.isAuthenticated = true
                     }
                 }
             } catch {
@@ -48,5 +48,19 @@ class AuthenticationManager: ObservableObject {
             }
             
         }
+    }
+    
+    func authenticateWithCredentials (username: String, password: String) {
+        if username.lowercased() == "admin" && password == "123" {
+            isAuthenticated = true
+        } else {
+            errorDescription = "Wrong credentials"
+            showAlert = true
+        }
+        
+    }
+    
+    func logout() {
+        isAuthenticated = false
     }
 }

@@ -30,7 +30,13 @@ struct LoginView: View {
                         }
                     }
             default:
-                PrimaryButton(image: "person.fill", text: "Login with your credentials")
+                NavigationLink {
+                    CredentialsLoginView()
+                        .environmentObject(authenticationManager)
+                } label: {
+                    PrimaryButton(image: "person.fill", text: "Login with your credentials")
+                }
+               
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

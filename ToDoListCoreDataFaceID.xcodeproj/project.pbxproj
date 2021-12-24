@@ -13,6 +13,7 @@
 		F9191A402773E2BB00F1B054 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9191A3F2773E2BB00F1B054 /* Preview Assets.xcassets */; };
 		F9191A422773E2BB00F1B054 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9191A412773E2BB00F1B054 /* Persistence.swift */; };
 		F9191A452773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9191A432773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodeld */; };
+		F93E92B2277647BB00970D08 /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93E92B1277647BB00970D08 /* CredentialsLoginView.swift */; };
 		F9E713192774A01100B4543C /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E713182774A01100B4543C /* Title.swift */; };
 		F9E7131B2774A13200B4543C /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E7131A2774A13200B4543C /* PrimaryButton.swift */; };
 		F9E713202774A55300B4543C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E7131F2774A55300B4543C /* LoginView.swift */; };
@@ -27,6 +28,7 @@
 		F9191A3F2773E2BB00F1B054 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9191A412773E2BB00F1B054 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F9191A442773E2BB00F1B054 /* ToDoListCoreDataFaceID.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListCoreDataFaceID.xcdatamodel; sourceTree = "<group>"; };
+		F93E92B1277647BB00970D08 /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 		F9E713182774A01100B4543C /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		F9E7131A2774A13200B4543C /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		F9E7131F2774A55300B4543C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				F9191A3A2773E2BB00F1B054 /* ContentView.swift */,
 				F9E7131F2774A55300B4543C /* LoginView.swift */,
+				F93E92B1277647BB00970D08 /* CredentialsLoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				F9191A3B2773E2BB00F1B054 /* ContentView.swift in Sources */,
 				F9191A392773E2BB00F1B054 /* ToDoListCoreDataFaceIDApp.swift in Sources */,
 				F9E713202774A55300B4543C /* LoginView.swift in Sources */,
+				F93E92B2277647BB00970D08 /* CredentialsLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
